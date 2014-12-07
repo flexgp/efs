@@ -39,11 +39,28 @@
 From our point of view, three major reasons cause this interest: </p>
 
 <ol>
-<li>Great performance: Deep Neural Networks have obtained outstanding performances performances in computer vision and speech recognition.</li>
-<li>From raw data to labels: let is consider the case of computer vision, these learning methods ingest images, and perform a series of nonlinear transformations to the pixel values.</li>
-<li>The more data, the better</li>
-<li>Parallelism with human brain</li>
+<li>Great performance: Deep Neural Networks have obtained outstanding performances in computer vision, natural language processing, and speech 
+recognition.</li>
+<li>Parallelism with human brain: Deep Neural Networks have also raised interest and debate
+int the neuroscience world. The debate in this case is mostly centered around whether these networks
+are an appropriate model for human brains, and to what extent standard training methods such
+as stochastic gradient descent can be useful to reproduce the complex thought processes involved
+in human thinking.</li>
+<li>The more data, the better: </li>
+<li>From raw data to labels in one step: let is consider the case of computer vision, these learning methods ingest images pixel by pixel, and apply a series of nonlinear 
+transformations that allow higher level information to be learned. This way, the network itself extract the features relevant from the task at hand. 
+By looking at the outputs of individual neurons in the network, it has been shown that they are able to identify find not only edges, but also complex 
+shapes like faces.</li>
 </ol>
+
+We are particularly interested in the last point. Automating or even skipping the feature extraction process can have a huge impact in many domains. 
+
+Are deep neural networks the right tool to use in all cases? While neural networks will, roughly speaking, do the job in almost any machine learning 
+problem, it is worth determining when they are the right tool to use. There are two main reasons that can make their use inappropriate. The first is 
+that large networks might just be an overkill, presenting a great training overhead. The second case is readability and interpretability. In many domains,
+from medicine to economy, the prediction itself can be almost as important as the reasoning that lead to make it. In this sense, neural networks, 
+while they are not black boxes, they are highly complex models that are hardly interpretable by humans.
+
 
 <pre><code>$ cd your_repo_root/repo_name
 $ git fetch origin

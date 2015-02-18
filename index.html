@@ -36,20 +36,16 @@
 
       <section>
 
-<p>EFS is a machine learning approach that generates readable, nonlinear models. For regression, we consider a basis expansion model: 
-<center><img src="http://latex.codecogs.com/svg.latex?$f(X) = \sum_{m=1}^{M}\beta_m h_m(X)$" border="0"/></center>
-
+<p>EFS is a regression algorithm that outputs readable, nonlinear models. 
+Given a dataset with response variable <b>Y</b> and a vector of variables <b>X</b>, EFS generates a basis expansion model of the form: 
+<center><img src="http://latex.codecogs.com/svg.latex?$f(X) = \sum_{m=1}^{M}\beta_m h_m(X)\ \ $" border="0"/>, &nbsp
+such that &nbsp <img src="http://latex.codecogs.com/svg.latex?$ \| Y-f(X) \|_{2}$" border="0"/> &nbsp is minimized.</center>
 <br>
 
-EFS relies on the assumption that the feature space, that is, the functions 
-<img src="http://latex.codecogs.com/svg.latex?$h_m(X)$" border="0"/> introduced in the equation above can be optimized by evolutionary computation. Given a set of basis functions, their weights 
-<img src="http://latex.codecogs.com/svg.latex?$\beta_m(X)$" border="0"/> are set deterministically by solving the LASSO regression problem:</p>
-
-<center><img src="http://latex.codecogs.com/svg.latex?$ \widehat{\beta} = argmin_{\beta \in R^m} ||Y-\sum_{m=1}^{M}\beta_m h_m(X)||^{2}_{2}$ + \lambda \sum^{M}_{m=1}|\beta_{m}|" border="0"/></center>
-
-<br>
-
-<p>We show below a model obtained for the <a href="downloads/ENB2012_cold.csv">cooling load energy efficiency dataset</a> available at the <a href="https://archive.ics.uci.edu/ml/datasets/Energy+efficiency">UCI repository</a>:</p>
+<p> EFS relies on the assumption that the functions 
+<img src="http://latex.codecogs.com/svg.latex?$h_m(X)$" border="0"/> introduced in the expression above can be optimized by evolutionary computation.
+We show below a model obtained for the <a href="downloads/ENB2012_cold.csv">cooling load energy efficiency dataset</a> available at 
+the <a href="https://archive.ics.uci.edu/ml/datasets/Energy+efficiency">UCI repository</a>. The dataset is composed of 8 features (X1,X2,...,X8) and a continuous dependent variable:</p>
 
 <pre><code>    33.507
 -  19.201 * X1
@@ -65,6 +61,17 @@ EFS relies on the assumption that the feature space, that is, the functions
 +   0.085 * (cube(exp(sin X2)))
 +   2.703 * (sqrt(sqrt(sqrt(sqrt X8))))
 </pre></code>
+
+
+<!-- EFS relies on the assumption that the functions 
+<img src="http://latex.codecogs.com/svg.latex?$h_m(X)$" border="0"/> introduced in the expression above can be optimized by evolutionary computation. Given a set of basis functions, their weights 
+<img src="http://latex.codecogs.com/svg.latex?$\beta_m(X)$" border="0"/> are set deterministically by solving the LASSO regression problem:</p>
+
+<center><img src="http://latex.codecogs.com/svg.latex?$ \widehat{\beta} = argmin_{\beta \in R^m} ||Y-\sum_{m=1}^{M}\beta_m h_m(X)||^{2}_{2}$ + \lambda \sum^{M}_{m=1}|\beta_{m}|" border="0"/></center>
+
+<br>
+-->
+
 
  
 <!-- <p><em>Ignacio Arnaldo, Kalyan Veeramachaneni, Andrew Song, Una-May O’Reilly: <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7010434">Bring Your Own Learner! A cloud-based,

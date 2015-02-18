@@ -96,12 +96,10 @@ href="#step-1-download-the-flexgpjar-file-from-here"><span class="octicon octico
 
 <p>From the terminal:</p>
 
-<pre><code>$ java -jar efs.jar -train path_to_train_data -cv path_to_validation_data -minutes 10
+<pre><code>$ java -jar efs.jar -train path_to_train_data -minutes num_minutes
 </code></pre>
 
-Note that if the -minutes argument is set to 0, the LASSO model will be returned.
-
-<p>The model will be stored in the file model.txt .</p>
+<p>Note that if the <em>-minutes</em> argument is set to <em>0</em>, the LASSO model will be returned. The model will be stored in the file <em>model.txt</em>.</p>
 
 
 
@@ -109,10 +107,8 @@ Note that if the -minutes argument is set to 0, the LASSO model will be returned
 
 <p>EFS provides functionality to obtain the mean squared error (MSE) and mean absolute error (MAE) of the generated model. From the terminal:</p>
 
-<pre><code>$ cd run_folder
-$ java -jar efs.jar -test path_to_test_data 
+<pre><code>$ java -jar efs.jar -test path_to_test_data path_to_model
 </code></pre>
-
 
 
 

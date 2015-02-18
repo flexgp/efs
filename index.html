@@ -77,10 +77,10 @@ data-parallel commons for Machine Learning</a>. IEEE Computational Intelligence 
 
 <h1><a name="tutorial" class="anchor" href="#tutorial"><span class="octicon octicon-link"></span></a>Tutorial</h1>
 
-<p>We provide a quick tutorial on how to get started with EFS.</p>
+<p>We provide a quick tutorial to get started with EFS.</p>
 
 <h2><a name="step-2-data-format" class="anchor" href="#step-2-data-format"><span class="octicon 
-octicon-link"></span></a>Step 1: Data format</h2>
+octicon-link"></span></a>Step 1: data format</h2>
 
 <p>Data must be provided in csv format where each line corresponds to an exemplar and the target values are placed 
 in the last column. Note that any additional line or column containing labels or nominal values needs to be removed.</p>
@@ -88,22 +88,22 @@ in the last column. Note that any additional line or column containing labels or
 
 
 <h2><a name="step-1-download-the-flexgpjar-file-from-here" class="anchor" 
-href="#step-1-download-the-flexgpjar-file-from-here"><span class="octicon octicon-link"></span></a>Step 2: Download the efs.jar file from <a href="downloads/efs.jar" target="_blank">here</a></a></h2>
+href="#step-1-download-the-flexgpjar-file-from-here"><span class="octicon octicon-link"></span></a>Step 2: download the efs.jar file from <a href="downloads/efs.jar" target="_blank">here</a></a></h2>
 
 
 
-<h2><a name="step-2-running-efs" class="anchor" href="#step-3-running-efs"><span class="octicon octicon-link"></span></a>Step 3: Model the data</h2>
+<h2><a name="step-2-running-efs" class="anchor" href="#step-3-running-efs"><span class="octicon octicon-link"></span></a>Step 3: model the data</h2>
 
 <p>From the terminal:</p>
 
 <pre><code>$ java -jar efs.jar -train path_to_train_data -minutes num_minutes
 </code></pre>
 
-<p>Note that if the <em>-minutes</em> argument is set to <em>0</em>, the LASSO model will be returned. The model will be stored in the file <em>model.txt</em>.</p>
+<p>Note that if the <em>-minutes</em> argument is set to <em>0</em>, the LASSO linear fit is returned. The model will be stored in the file <em>model.txt</em>.</p>
 
 
 
-<h2><a name="test-the-models" class="anchor" href="#test-the-models"><span class="octicon octicon-link"></span></a>Test the model</h2>
+<h2><a name="test-the-models" class="anchor" href="#test-the-models"><span class="octicon octicon-link"></span></a>Step 4: test the model</h2>
 
 <p>EFS provides functionality to obtain the mean squared error (MSE) and mean absolute error (MAE) of the generated model. From the terminal:</p>
 

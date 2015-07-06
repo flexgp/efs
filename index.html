@@ -30,10 +30,6 @@
 
 
 
-
-
-
-
       <section>
 
 <p>EFS is a regression algorithm that outputs accurate, readable, nonlinear models. 
@@ -42,7 +38,7 @@ Given a dataset with response variable <b>Y</b> and a vector of variables <b>X</
 such that &nbsp <img src="http://latex.codecogs.com/svg.latex?$ \| Y-f(X) \|_{2}$" border="0"/> &nbsp is minimized.</center>
 <br>
 
-<p> EFS relies on the assumption that the functions 
+<p>EFS relies on the assumption that the functions 
 <img src="http://latex.codecogs.com/svg.latex?$h_m(X)$" border="0"/> introduced in the expression above can be optimized by evolutionary computation.
 We show below a model obtained for the <a href="downloads/ENB2012_cold.csv">cooling load energy efficiency dataset</a> available at 
 the <a href="https://archive.ics.uci.edu/ml/datasets/Energy+efficiency">UCI repository</a>. The dataset is composed of 8 features (X1,X2,...,X8) and a continuous dependent variable:</p>
@@ -77,6 +73,11 @@ the <a href="https://archive.ics.uci.edu/ml/datasets/Energy+efficiency">UCI repo
 <!-- <p><em>Ignacio Arnaldo, Kalyan Veeramachaneni, Andrew Song, Una-May O’Reilly: <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7010434">Bring Your Own Learner! A cloud-based,
 data-parallel commons for Machine Learning</a>. IEEE Computational Intelligence Magazine. vol.10, no.1, pp.20,32, Feb. 2015.</em></p> -->
 
+<h1><a name="publications" class="anchor" href="#publications"><span class="octicon octicon-link"></span></a>Publications</h1>
+<p>For more details of EFS, the reader is referred to 
+ <a href="http://dl.acm.org/citation.cfm?id=2598291"> this paper</a>:</p>
+ <p><em>Arnaldo, I.; Veeramachaneni, K.; O'Reilly, UM: Building predictive models via feature synthesis.
+ Proceedings of the 2015 conference on Genetic and evolutionary computation (GECCO 2015). Pages TBD, 2015.</em></p>
 
 
 
@@ -119,19 +120,16 @@ href="#step-1-download-the-flexgpjar-file-from-here"><span class="octicon octico
 
 
 
-
-<h1><a name="examples" class="anchor" href="#examples"><span class="octicon octicon-link"></span></a>Examples</h1>
-
-<p>To check reports visit our blog:
-<a href="blog.html">FlexGP Blog</a></p>
-
-
 <h1><a name="lasso-implementation" class="anchor" href="#lasso-implementation"><span class="octicon octicon-link"></span></a>Credits</h1>
  
 <p>EFS uses the library <a href="https://code.google.com/p/lasso4j/">LASSO4j</a>, an efficient implementation of LASSO by Y. Ganjisaffar. This implementation is based on the pathwise coordinate descent 
 method introduced in <a href="http://www.jstatsoft.org/v33/i01/paper"> this paper</a>:</p>
 <p><em>J. H. Friedman, T. Hastie, and R. Tibshirani. Regularization paths for generalized linear models via
 coordinate descent. Journal of Statistical Software, 33(1):1–22, 2 2010.</em></p>
+
+
+<h1>
+<a name="publications" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Publications</h1>
 
 
 <h1>

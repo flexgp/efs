@@ -6,5 +6,5 @@ This release containts:
 
 2) A jar executable (execs folder)
 
-For a short tutorial please visit: http://ignacioarnaldo.github.io/efs/
+For a short tutorial please visit: http://flexgp.github.io/efs/
 
